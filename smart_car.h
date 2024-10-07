@@ -22,7 +22,7 @@ struct Chassis {
     string minimum_turning_radius;
     string driving_form;
     string maximum_stroke;
-    Tyre tyre[3];
+    Tyre tyre[4];
 };
 
 struct AGXKit {
