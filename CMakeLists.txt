@@ -4,5 +4,13 @@ project(Vehicle_mounted_software_experiment_report_one)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Vehicle_mounted_software_experiment_report_one main.cpp
-        smart_car.h
-        student.h)
+        SmartCar.h
+        Student.h
+        Chassis.h
+        Tyre.h
+        AGXKit.h
+        StereoVisionCamera.h
+        MultiLineLidar.h
+        NineAxisGyroscope.h
+        LCD.h
+        BatteryModule.h)

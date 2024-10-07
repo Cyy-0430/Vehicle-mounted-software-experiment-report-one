@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 
-#include "smart_car.h"
-#include "student.h";
+#include "SmartCar.h"
+#include "Student.h";
 
 int main() {
 
