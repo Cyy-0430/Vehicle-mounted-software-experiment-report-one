@@ -6,16 +6,17 @@
 #define SMART_CAR_H
 
 #include <string>
+#include <vector>
 
 #include "AGXKit.h"
 #include "BatteryModule.h"
 #include "Chassis.h"
+#include "LCD.h"
 #include "MultiLineLidar.h"
 #include "NineAxisGyroscope.h"
 #include "StereoVisionCamera.h"
 
 using std::string;
-
 
 struct SmartCar {
     string id;
@@ -24,7 +25,10 @@ struct SmartCar {
     StereoVisionCamera stereo_camera;
     MultiLineLidar multi_line_lidar;
     NineAxisGyroscope nine_axis_gyroscope;
+    LCD lcd;
     BatteryModule battery_module;
 };
 
+void save_smart_car_data();
+std::vector<SmartCar> load_smart_car_data();
 #endif //SMART_CAR_H

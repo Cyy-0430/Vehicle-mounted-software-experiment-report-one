@@ -13,4 +13,7 @@ add_executable(Vehicle_mounted_software_experiment_report_one main.cpp
         MultiLineLidar.h
         NineAxisGyroscope.h
         LCD.h
-        BatteryModule.h)
+        BatteryModule.h
+        Student.cpp
+        SmartCar.cpp
+        main.h)

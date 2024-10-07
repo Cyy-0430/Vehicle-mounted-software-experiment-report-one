@@ -13,6 +13,7 @@ using std::string;
 
 struct Chassis {
     string id;
+    string model;
     string wheel_base;
     string wheel_track;
     string minimum_ground_clearance;

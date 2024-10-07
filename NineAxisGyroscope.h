@@ -2,8 +2,8 @@
 // Created by Zephyrus-Desktop on 2024/10/7.
 //
 
-#ifndef NINEAXISGYROSCOPE_H
-#define NINEAXISGYROSCOPE_H
+#ifndef NINE_AXIS_GYROSCOPE_H
+#define NINE_AXIS_GYROSCOPE_H
 
 #include <string>
 
@@ -14,4 +14,4 @@ struct NineAxisGyroscope {
     string model;
     string manufacturers;
 };
-#endif //NINEAXISGYROSCOPE_H
+#endif //NINE_AXIS_GYROSCOPE_H
