@@ -20,7 +20,7 @@ int main() {
     while (idx < 10) {
         show(students[idx], smart_cars[idx]);
 
-        cout << "输入 p 显示上一辆小车信息，输入 q 显示下一辆小车信息：";
+        cout << "输入 p 显示上一辆小车信息，输入 n 显示下一辆小车信息：";
         char ch;
         cin >> ch;
 
