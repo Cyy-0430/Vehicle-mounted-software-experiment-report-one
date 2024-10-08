@@ -174,7 +174,7 @@ std::vector<SmartCar> load_smart_car_data() {
 
     Tyre tyres[4];
 
-    for (auto & i : tyres) {
+    for (auto &i: tyres) {
         tyresFile >> i.size >> i.model;
     }
     tyresFile.close();
@@ -192,12 +192,11 @@ std::vector<SmartCar> load_smart_car_data() {
 
 
     chassisFile >> chassis.id >> chassis.model
-    >> chassis.wheel_base >> chassis.wheel_track
-    >> chassis.minimum_ground_clearance
-    >> chassis.minimum_turning_radius
-    >> chassis.driving_form >> chassis.maximum_stroke;
+            >> chassis.wheel_base >> chassis.wheel_track
+            >> chassis.minimum_ground_clearance
+            >> chassis.minimum_turning_radius
+            >> chassis.driving_form >> chassis.maximum_stroke;
     chassisFile.close();
-
 
 
     std::ifstream agxFile;
@@ -206,8 +205,8 @@ std::vector<SmartCar> load_smart_car_data() {
     AGXKit agx_kit;
 
     agxFile >> agx_kit.model >> agx_kit.ai
-    >> agx_kit.cuda_cores >> agx_kit.tensor_core
-    >> agx_kit.video_memory >> agx_kit.storage;
+            >> agx_kit.cuda_cores >> agx_kit.tensor_core
+            >> agx_kit.video_memory >> agx_kit.storage;
 
     agxFile.close();
 
@@ -217,8 +216,8 @@ std::vector<SmartCar> load_smart_car_data() {
     StereoVisionCamera stereo_camera;
 
     stereoFile >> stereo_camera.model >> stereo_camera.camera
-    >> stereo_camera.rgb_frame_resolution >> stereo_camera.rgb_fps
-    >> stereo_camera.fov >> stereo_camera.deep_fps;
+            >> stereo_camera.rgb_frame_resolution >> stereo_camera.rgb_fps
+            >> stereo_camera.fov >> stereo_camera.deep_fps;
 
     stereoFile.close();
 
@@ -229,7 +228,7 @@ std::vector<SmartCar> load_smart_car_data() {
     MultiLineLidar multiLineLidar;
 
     multiLineLidarFile >> multiLineLidar.model >> multiLineLidar.channel
-    >> multiLineLidar.test_range >> multiLineLidar.power;
+            >> multiLineLidar.test_range >> multiLineLidar.power;
     multiLineLidarFile.close();
 
 
@@ -257,7 +256,7 @@ std::vector<SmartCar> load_smart_car_data() {
     BatteryModule batteryModule;
 
     batteryFile >> batteryModule.parameter >> batteryModule.external_power_supply
-    >> batteryModule.charging_time;
+            >> batteryModule.charging_time;
     batteryFile.close();
 
     std::vector<SmartCar> smartCars;

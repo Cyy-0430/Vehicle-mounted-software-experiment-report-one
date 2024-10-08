@@ -27,7 +27,7 @@ void save_student_data() {
     std::ofstream outFile;
     outFile.open("student_data.txt");
 
-    for (const auto & s : student) {
+    for (const auto &s: student) {
         // std::cout << s.id << " " << s.name << std::endl;
         outFile << s.id << " " << s.name << std::endl;
     }

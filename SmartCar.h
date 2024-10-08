@@ -30,5 +30,6 @@ struct SmartCar {
 };
 
 void save_smart_car_data();
+
 std::vector<SmartCar> load_smart_car_data();
 #endif //SMART_CAR_H
